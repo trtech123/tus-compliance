@@ -22,7 +22,7 @@ Order Number: ${formData.orderNumber}
 Phone Number: ${formData.phone}
 Data to Delete: ${formData.dataToDelete}`
 
-    const mailtoLink = `mailto:abcd@gmail.com?subject=Data Deletion Request&body=${encodeURIComponent(emailBody)}`
+    const mailtoLink = `mailto:shlomi@tus.co.il?subject=Data Deletion Request&body=${encodeURIComponent(emailBody)}`
 
     window.location.href = mailtoLink
     setSubmitted(true)
@@ -55,7 +55,7 @@ Data to Delete: ${formData.dataToDelete}`
           borderRadius: '8px',
           color: '#155724'
         }}>
-          Your email client should have opened with your data deletion request. If it didn't, please send an email to abcd@gmail.com with your information.
+          Your email client should have opened with your data deletion request. If it didn't, please send an email to shlomi@tus.co.il with your information.
         </div>
       ) : (
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
